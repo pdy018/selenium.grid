@@ -20,7 +20,7 @@ public class AppIT {
     public void setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         capabilities.setPlatform(Platform.LINUX);
-        driver = new RemoteWebDriver(new URL("http://docker.for.mac.localhost:4444/wd/hub"), capabilities);
+        driver = new RemoteWebDriver(new URL("https://selenium.devops.sparkflow.top/wd/hub"), capabilities);
     }
 
     @AfterTest
