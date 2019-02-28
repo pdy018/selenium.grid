@@ -30,7 +30,8 @@ public class AppIT {
 
     @Test
     public void simpleTest() {
-        driver.navigate().to("http://www.google.com");
-        Assert.assertEquals(driver.getTitle(), "Google");
+        driver.navigate().to("http://goodv1.us-west-2.elasticbeanstalk.com/Roo/");
+        Assert.assertEquals(driver.findElement(By.xpath("/html/body/a")).getText(), "RunRestApp");
+		Assert.assertEquals(driver.findElement(By.xpath("/html/body/h1")).getText(), "RestServiceDeploy!");
     }
 }
